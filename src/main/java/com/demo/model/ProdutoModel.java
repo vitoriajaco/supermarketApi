@@ -19,8 +19,6 @@ public class ProdutoModel {
     private Categoria categoria = Categoria.SEM_CATEGORIA;
 
 
-
-
     public Long getId() {
         return id;
     }

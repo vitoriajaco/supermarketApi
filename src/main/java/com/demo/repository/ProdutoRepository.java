@@ -2,6 +2,8 @@ package com.demo.repository;
 
 import com.demo.model.ProdutoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProdutoRepository extends JpaRepository<Long, ProdutoModel> {
+@Repository
+public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
 }
