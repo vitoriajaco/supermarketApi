@@ -10,6 +10,7 @@ public enum Categoria {
     ADEGA,
     BEBIDAS,
     HIGIENE,
+    SEM_CATEGORIA
 
 
 
