@@ -16,6 +16,9 @@ public class ProdutoService {
     private ProdutoRepository produtoRepository;
 
     public List<ProdutoModel> mostrarTodosOsProdutos(){
+        if (mostrarTodosOsProdutos().isEmpty()){
+            throw new IllegalStateException("Não há produtos cadastrados!");
+        }
         return produtoRepository.findAll();
     }
 
